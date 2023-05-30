@@ -1,0 +1,10 @@
+{
+  "id": "sierra.slider.app",
+  "version": "0.0.1",
+  "vendor": "My Company",
+  "type": "web",
+  "main": "index.html",
+  "title": "Sierra slider task",
+  "icon": "icon.png",
+  "largeIcon": "largeIcon.png"
+}
