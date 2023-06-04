@@ -3,7 +3,6 @@ import {startLoader, stopLoader, initializeSlider} from './state.js';
 var appId = 'sierra.slider.app';
 var kindId = appId + ":1";
 var callerId = 'sierra.slider.app.*';
-
 var slider;
 var query = [{ prop: 'link', op: '!=', val: ''}];
 

@@ -49,11 +49,6 @@ function uploadPhoto(props) {
         var { fileUrl } = await upload.uploadFile(
             file,
             {
-              onBegin: ({ cancel }) => {
-              },
-              onProgress: ({ bytesSent, bytesTotal }) => {
-                console.log({ bytesSent, bytesTotal });
-              },
               path: {
                 folderPath: '/uploads/{UTC_YEAR}/{UTC_MONTH}/{UTC_DAY}',
                 fileName: '{UNIQUE_DIGITS_8}{ORIGINAL_FILE_EXT}'
@@ -71,7 +66,6 @@ function uploadPhoto(props) {
         fileEl.value = null;
       }
     }
-
     return onFileSelected();
   });
 }

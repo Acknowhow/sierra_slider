@@ -21,7 +21,7 @@ window.addEventListener("keydown", function(inEvent) {
   } else if (e.which) {
     keycode = inEvent.which;
   }
-  console.log(keycode);
+
   switch (keycode) {
     case GO_UP_KEY:
       goUp();
