@@ -28,7 +28,6 @@ function delAll() {
     },
   });
 }
-
 function refreshDB() {
   startLoader();
 
@@ -80,7 +79,6 @@ function refreshDB() {
     }
   });
 }
-
 function putKind() {
   webOS.service.request('luna://com.palm.db', {
     method: 'putKind',
@@ -117,7 +115,6 @@ function putKind() {
     },
   });
 }
-
 function put(link) {
   webOS.service.request('luna://com.palm.db', {
     method: 'put',
@@ -140,7 +137,6 @@ function put(link) {
     },
   });
 }
-
 function find(query) {
   webOS.service.request('luna://com.palm.db', {
     method: 'find',
@@ -162,7 +158,6 @@ function find(query) {
     }
   });
 }
-
 function delKind() {
   webOS.service.request('luna://com.palm.db', {
     method: 'delKind',

@@ -1,4 +1,6 @@
 var loader = document.querySelector('.loader-wrapper');
+var DELAY = 15000;
+var SMOOTH_SPEED = 1200;
 var event = new MouseEvent("click", {
   view: window,
   bubbles: true,
@@ -33,11 +35,11 @@ function initializeSlider() {
     observer: true,
     allowTouchMove: false,
     loop: true,
-    speed: 1200,
+    speed: SMOOTH_SPEED,
     effect: 'slide',
 
     autoplay: {
-      delay: 3000,
+      delay: DELAY,
       disableOnInteraction: true,
       reverseDirection: true
     },
